@@ -1,101 +1,27 @@
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text, useColorScheme } from 'react-native'
 import React from 'react'
+import RootNavigator from './navigation/RootNavigator'
+import { NavigationContainer } from '@react-navigation/native'
+import { StatusBar } from 'expo-status-bar'
+// import { SafeAreaView } from 'react-native-safe-area-context'
+
+import '../global.css'
+import { SafeAreaView } from '@/components/core/safe-area-view'
 
 
 const Page = () => {
+    const colorScheme = useColorScheme()
+    console.log(colorScheme)
     return (
-        <ScrollView className='bg-red-500'>
-            <Text>Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-            <Text className="text-red-500 text-2xl font-bold">Page 1</Text>
-        </ScrollView>
+        // <View style={{ flex: 1 }}>
+        //     <StatusBar style='light' />
+        //     <Text className='text-white bg-emerald-900'>Hello</Text>
+        // </View>
+        <NavigationContainer independent={true}>
+            <RootNavigator />
+        </NavigationContainer>
+
+
     )
 }
 
